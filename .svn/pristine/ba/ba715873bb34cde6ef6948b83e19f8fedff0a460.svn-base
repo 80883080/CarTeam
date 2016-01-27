@@ -42,38 +42,17 @@
 			#shop ul li ul li p{float: left;color: #606a6c;}
 			#shop ul li ul li span{float: right;color: #606a6c;}
 			
-			#content ul{width: 100%;height: auto;float: left;margin-bottom: 240px;}
+			#content ul{width: 100%;}
 			#content ul li{width: 100%;float: left;height: 52px;margin-top: 30px;}
 			#content ul li .tips{width: 257px;height: 50px;float: left;border-radius: 5px;border: 1px #ccd0d9 solid;background: #fff;margin-left: 30px;}
 			#content ul li .tips h2{float:left;width: 68px;height: 50px;line-height: 50px;border-top-left-radius: 5px;border-bottom-left-radius: 5px;background: #fbb03b;font-size: 14px;text-align: center;}
-			#content ul li .tips_green h2{background: #8cc63e;}
-			#content ul li .tips_gery h2{background: #5f6a6c;}
 			#content ul li .tips h1{float: left;width: 170px;color: #5f6a6c;font-size: 14px;margin: 6px 0 0 10px;}
 			#content ul li .tips h3{float: left;width: 170px;color: #5f6a6c;font-size: 12px;margin: 0px 0 0 10px;}
-			#content ul li .line{width: 700px;height: 50px;float: left;margin-left: 20px;position: relative;}
-			#content ul li .line .lines{height: 1px;position: absolute;width: 100%;background: #616a6f;margin: 25px 30px;}
-			#content ul li .line ul{float: left;height: 50px;z-index: 100;position: relative;}
-			#content ul li .line ul li{float: left;width: 70px;height: 50px;margin: 0;}
-			#content ul li .line ul li p{width: 70px;text-align: center;height: 14px;line-height: 14px;color: #5f6a6c;}
-			#content ul li .line ul li .point{width: 12px;height: 12px;border-radius: 12px;border:1px #5f6a6c solid;margin: 4px auto;background: #fff;}
-			#content ul li .line ul li .point span{width: 10px;height: 10px;background: #23a8f5;float: left;border-radius: 10px;margin: 1px;}
-			#content ul li .line ul li .point_blue span{background: #23a8f5;}
-			#content ul li .line ul li .point_red span{background: #f15a25;}
-			#content ul li .line ul li .point_white span{background: #fff;}
+			#content ul li .line{width: 700px;height: 50px;float: left;background: #abc;margin-left: 20px;}
 			#content ul li .more{float: right;width: 50px;height: 50px;border-radius: 5px;background: #23a8f5;margin-right: 30px;cursor: pointer;}
 			#content ul li .more p{width: 24px;margin: 11px;line-height: 14px;}
 			
 		</style>
-		
-		<script type="text/javascript">
-			$(function(){
-				
-			for (var i=0;i<$("#content ul li .lines").length;i++) {
-				$(".lines").eq(i).width(70*($(".line").eq(i).find("ul li").length-1));
-			}
-			
-			})
-		</script>
 	</head>
 	<body>
 		<div id="monitor_car">
@@ -152,109 +131,37 @@
 				<ul>
 					<li>
 						<div class="tips"><h2>待发车</h2><h1>班线名称</h1><h3>发车时间  2015-12-16 09:00</h3></div>
-						<div class="line">
-							<div class="lines"></div>
-							<ul>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point point_red"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point point_red"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point point_white"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point point_white"><span></span></div><p>福州</p></li>
-							</ul>
-						</div>
-						<div class="more"><p>查看详情</p></div>
-					</li>
-					<li>
-						<div class="tips tips_green"><h2>在途中</h2><h1>班线名称</h1><h3>发车时间  2015-12-16 09:00</h3></div>
-						<div class="line">
-							<div class="lines"></div>
-							<ul>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point point_red"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point point_red"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point point_white"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point point_white"><span></span></div><p>福州</p></li>
-							</ul>
-						</div>
+						<div class="line"></div>
 						<div class="more"><p>查看详情</p></div>
 					</li>
 					<li>
 						<div class="tips"><h2>待发车</h2><h1>班线名称</h1><h3>发车时间  2015-12-16 09:00</h3></div>
-						<div class="line">
-							<div class="lines"></div>
-							<ul>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point point_red"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point point_white"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point point_white"><span></span></div><p>福州</p></li>
-							</ul>
-						</div>
-						<div class="more"><p>查看详情</p></div>
-					</li>
-					<li>
-						<div class="tips tips_green"><h2>在途中</h2><h1>班线名称</h1><h3>发车时间  2015-12-16 09:00</h3></div>
-						<div class="line">
-							<div class="lines"></div>
-							<ul>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point point_red"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point point_red"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point point_white"><span></span></div><p>福州</p></li>
-							</ul>
-						</div>
-						<div class="more"><p>查看详情</p></div>
-					</li>
-					<li>
-						<div class="tips tips_gery"><h2>已结束</h2><h1>班线名称</h1><h3>发车时间  2015-12-16 09:00</h3></div>
-						<div class="line">
-							<div class="lines"></div>
-							<ul>
-								<li><p>正常</p><div class="point point_red"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point point_white"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point point_white"><span></span></div><p>福州</p></li>
-							</ul>
-						</div>
-						<div class="more"><p>查看详情</p></div>
-					</li>
-					<li>
-						<div class="tips tips_gery"><h2>已结束</h2><h1>班线名称</h1><h3>发车时间  2015-12-16 09:00</h3></div>
-						<div class="line">
-							<div class="lines"></div>
-							<ul>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point point_red"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point point_white"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point point_white"><span></span></div><p>福州</p></li>
-							</ul>
-						</div>
+						<div class="line"></div>
 						<div class="more"><p>查看详情</p></div>
 					</li>
 					<li>
 						<div class="tips"><h2>待发车</h2><h1>班线名称</h1><h3>发车时间  2015-12-16 09:00</h3></div>
-						<div class="line">
-							<div class="lines"></div>
-							<ul>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
-							</ul>
-						</div>
+						<div class="line"></div>
+						<div class="more"><p>查看详情</p></div>
+					</li>
+					<li>
+						<div class="tips"><h2>待发车</h2><h1>班线名称</h1><h3>发车时间  2015-12-16 09:00</h3></div>
+						<div class="line"></div>
+						<div class="more"><p>查看详情</p></div>
+					</li>
+					<li>
+						<div class="tips"><h2>待发车</h2><h1>班线名称</h1><h3>发车时间  2015-12-16 09:00</h3></div>
+						<div class="line"></div>
+						<div class="more"><p>查看详情</p></div>
+					</li>
+					<li>
+						<div class="tips"><h2>待发车</h2><h1>班线名称</h1><h3>发车时间  2015-12-16 09:00</h3></div>
+						<div class="line"></div>
+						<div class="more"><p>查看详情</p></div>
+					</li>
+					<li>
+						<div class="tips"><h2>待发车</h2><h1>班线名称</h1><h3>发车时间  2015-12-16 09:00</h3></div>
+						<div class="line"></div>
 						<div class="more"><p>查看详情</p></div>
 					</li>
 				</ul>
