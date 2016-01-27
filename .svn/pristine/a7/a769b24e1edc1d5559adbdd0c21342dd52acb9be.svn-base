@@ -1,0 +1,27 @@
+html,body{width: 100%;height: 100%;background: #ccc;overflow: hidden;min-width: 900px;}
+#workset_wrapper{width: 100%;height: 100%;}
+#workset_wrapper #header{width: 100%;height: 80px;background: #0054b4;}
+#workset_wrapper #nav{width: 220px;background: #d8e9ef;float: left;overflow: auto;overflow-x: hidden;}
+#workset_wrapper #main{margin-left: 220px;background: #fff;overflow: hidden;position: relative}
+
+#workset_wrapper #header #logo{width: 350px;height: 35px;float: left;margin: 20px;}
+#workset_wrapper #header #logo img{float: left;width: 60px;height: 35px;}
+#workset_wrapper #header #logo h1{float: left;font-size: 14px;width: 270px;margin-left: 20px;}
+#workset_wrapper #header #logo h2{float: left;font-size: 12px;width: 270px;margin-left: 20px;}
+
+#workset_wrapper #header #tips{width: 470px;height: 40px;margin: 20px;float: right;margin-left: -28px;}
+#workset_wrapper #header #tips #time{font-size: 12px;line-height: 40px;width: 250px;float: left;text-align: center;}
+#workset_wrapper #header #tips ul{float: left;width: 170px;margin-left: 10px;height: 40px;}
+#workset_wrapper #header #tips ul li{width: 40px;height: 40px;border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius:5px; background: #23a8f5;float: left;margin-left: 15px;cursor: pointer;}
+
+#workset_wrapper #nav ul{float: left;width: 220px;margin-top: 10px;height: auto;}
+#workset_wrapper #nav ul li{float: left;height: auto;cursor: pointer;width: 220px;}
+#workset_wrapper #nav ul li i{float: left;height: 32px;width: 32px;height: 32px;line-height: 32px;text-align: center;color: #000;margin-left: 14px;}
+#workset_wrapper #nav ul li p{float: left;height: 37px;line-height: 37px;font-size: 12px;color: #5f6a6d;margin-left: 14px;width: 120px;}
+#workset_wrapper #nav ul li span{float: left;height: 37px;background: url(../imgs/more.jpg) no-repeat 0 10px;width: 18px;display: block;text-indent: -9999px;}
+
+#workset_wrapper #nav ul li .subnav{width: 160px;float: right;margin-top: 0;display: none;}
+#workset_wrapper #nav ul li .subnav li{height: 40px;}
+#workset_wrapper #nav ul li .subnav .round{width: 10px;height: 10px;border-radius: 10px;-webkit-border-radius: 10px;-moz-border-radius:10px;
+							border: 1px #5e686b solid;float: left;margin-top:13px;}
+#workset_wrapper .nav-p{color:#0054b4;}

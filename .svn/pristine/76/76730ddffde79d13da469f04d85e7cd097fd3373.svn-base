@@ -1,0 +1,11 @@
+$(function(){
+	init();
+	function init(){
+		$("#menu").height($(window).height()-112);
+		$("#main").height($(window).height()-112);
+		$(window).resize(function() {
+			$("#menu").height($(window).height()-112);
+			$("#main").height($(window).height()-112);
+		});
+	}
+});   

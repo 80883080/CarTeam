@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>车辆监控</title>
+		<link rel="stylesheet" href="../assets/css/reset.css" />
+		<script type="text/javascript" src="../assets/js/jquery-1.9.1.js" ></script>
+		
+		<style type="text/css">
+			html,body{height: 100%;width: 100%;overflow-x: auto;overflow-y: hidden;}
+			input{color: #333;}
+			#monitor_car{width: 100%;height: 100%;background: #f2f7fa;min-width: 1125px;}
+			#column{width: 100%;height: 60px;background: #fff;border-bottom: 1px #ccd1d9 solid;}
+			#shop{width: 100%;height: 100px;background: #fff;border-bottom: 1px #ccd1d9 solid;}
+			#content{width: 100%;height: 100%;background: #f2f7fa;overflow: auto;}
+			
+			#column ul{margin-left: 10px;}
+			#column ul li{float: left;height: 30px;background: #fff;border-radius: 5px;border: 1px #ccd1d9 solid;margin: 14px;margin-left:10px;margin-right: 0px;}
+			#column ul li p{border-radius: 5px;border-top-right-radius:0px;border-bottom-right-radius:0px;float: left;color: #5f6a6c;background: #f4f8f9;height: 30px;line-height: 30px;padding:0 9px;border-right: 1px #ccd1d9 solid;}
+			#column ul li input{float: left;text-align: center;}
+			#column ul li span{float: left;color: #5f6a6c;height:30px;line-height: 30px;}
+			#column ul li select{float: left;border: none;border-radius: 5px;height: 30px;margin-left:3px;}
+			
+			#column .Time{position: relative;width: 90px;height: 30px;border-radius: 5px;}
+			#column .Time::-webkit-calendar-picker-indicator {position: absolute;left: 0;width: 100px;opacity: 0;height: 100%;width: 100%;}
+			#column .Time::-webkit-inner-spin-button{ visibility: hidden; }
+			#column ul li .input_text{height: 30px;width:auto;margin: 0 3px;text-align: center;}
+			
+			#column ul #column_btn p{border-right:0px;cursor: pointer;border-radius: 5px;}
+			
+			#shop ul{float: left;height: 50px;margin-top: 22px;}
+			#shop ul li{float: left;border-right: 1px #ccd1d9 solid;height: 50px;}
+			#shop ul li .status{height: 50px;width: 50px;border-radius:5px;background: #000;margin: 0px 40px;float: left;}
+			#shop ul li .status h1{width: 100%;text-align: center;font-size: 22px;line-height: 22px;height: 22px;padding-top:5px ;}
+			#shop ul li .status h2{width: 100%;text-align: center;font-size: 14px;}
+			#shop ul li .status_blue{background: #23a8f5;}
+			#shop ul li .status_yellow{background: #fbb03b;}
+			#shop ul li .status_green{background: #8cc63e;}
+			#shop ul li .status_gery{background: #5f6a6c;}
+			#shop ul li ul{height: 51px;float: left;width: 90px;margin: 0;margin-right: 40px;}
+			#shop ul li ul li{width: 90px;float: left;border: 0px;height: 17px;}
+			#shop ul li ul li p{float: left;color: #606a6c;}
+			#shop ul li ul li span{float: right;color: #606a6c;}
+			
+			#content ul{width: 100%;}
+			#content ul li{width: 100%;float: left;height: 50px;background: #abc;margin-top: 30px;}
+			
+		</style>
+	</head>
+	<body>
+		<div id="monitor_car">
+			<div id="column">
+				<ul>
+					<li><p>时间范围</p><input type="date" class="Time" id="start"/><span>至</span><input type="date" class="Time" id="end"/></li>
+					<li><p>所属机构</p>
+						<select>
+						   <option>解放军车队一组</option>
+						   <option>2</option>
+						   <option>3</option>
+						   <option>4</option>
+						   <option>5</option>
+						</select>
+					</li>
+					<li><p>车辆</p>
+						<select>
+						   <option>京BL554</option>
+						   <option>2</option>
+						   <option>3</option>
+						   <option>4</option>
+						   <option>5</option>
+						</select>
+					</li>
+					<li><p>驾驶员</p><input type="text" value="李小四" class="input_text" style="width: 50px;"/></li>
+					<li><p>任务名称</p><input type="text" value="北京至哈尔滨" class="input_text" style="width: 90px"/></li>
+					<li><p>线路类型</p>
+						<select>
+						   <option>干线</option>
+						   <option>2</option>
+						   <option>3</option>
+						   <option>4</option>
+						   <option>5</option>
+						</select>
+					</li>
+					<li id="column_btn"><p>查询</p></li>
+				</ul>
+			</div>
+			<div id="shop">
+				<ul>
+					<li>
+						<div class="status status_blue" style="width: 67px;;"><h1>23</h1><h2>所有计划</h2></div>
+					</li>
+					<li>
+						<div class="status status_yellow"><h1>7</h1><h2>待发车</h2></div>
+						<ul>
+							<li><p>正常</p><span>3</span></li>
+							<li><p>预计发车延时</p><span>3</span></li>
+							<li><p>发车延时</p><span>3</span></li>
+						</ul>
+					</li>
+					<li>
+						<div class="status status_green"><h1>10</h1><h2>在途中</h2></div>
+						<ul>
+							<li><p>正常</p><span>3</span></li>
+							<li><p>预计发车延时</p><span>3</span></li>
+							<li><p>发车延时</p><span>3</span></li>
+						</ul>
+						<ul>
+							<li><p>正常</p><span>3</span></li>
+							<li><p>预计发车</p><span>3</span></li>
+							<li><p>发车延时</p><span>3</span></li>
+						</ul>
+					</li>
+					<li>
+						<div class="status status_gery"><h1>7</h1><h2>已结束</h2></div>
+						<ul>
+							<li><p>正常</p><span>3</span></li>
+							<li><p>预计发车延时</p><span>3</span></li>
+							<li><p>发车延时</p><span>3</span></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="content">
+				<ul>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>0</li>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>0</li>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>0</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
