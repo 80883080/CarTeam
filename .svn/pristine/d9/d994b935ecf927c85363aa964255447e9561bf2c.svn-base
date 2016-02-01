@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工作台</title>
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    
+    <script type="text/javascript" src="../assets/js/jquery-1.9.1.js" ></script>
+	<script type="text/javascript" src="../assets/js/workset.js" ></script>
+	
+    <style>
+    	html,body{width: 100%;height: 100%;background: #ccc;overflow: hidden;}
+    	#wrapper{width: 100%;height: 100%;min-height: 670px;}
+    	#header{width: 100%;height: 80px;background: #0054b4;}
+    	#nav{width: 309px;background: #d8e9ef;float: left;overflow: auto;overflow-x: hidden;}
+    	#main{margin-left: 309px;background: #fff;overflow-x: hidden;}
+    	
+    	#header #logo{width: 430px;height: 55px;float: left;margin: 10px;}
+    	#header #logo img{float: left;width: 90px;height: 55px;}
+    	#header #logo h1{float: left;font-size: 18px;width: 320px;margin-left: 20px;}
+    	#header #logo h2{float: left;font-size: 14px;width: 320px;margin-left: 20px;}
+    	
+    	#header #tips{width: 510px;height: 55px;margin: 10px;float: right;margin-left: -28px;}
+    	#header #tips #time{font-size: 14px;line-height: 55px;width: 250px;float: left;text-align: center;}
+    	#header #tips ul{float: left;width: 230px;margin-left: 10px;height: 55px;}
+    	#header #tips ul li{width: 55px;height: 55px;border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius:5px; background: #23a8f5;float: left;margin-left: 15px;cursor: pointer;}
+    	
+    	#nav ul{float: left;width: 309px;margin-top: 10px;height: auto;}
+    	#nav ul li{float: left;height: auto;cursor: pointer;width: 309px;}
+    	#nav ul li i{float: left;height: 50px;width: 44px;height: 44px;line-height: 44px;text-align: center;color: #000;margin-left: 20px;}
+    	#nav ul li p{float: left;height: 50px;line-height: 50px;font-size: 14px;color: #5d686b;margin-left: 20px;width: 180px;}
+    	#nav ul li span{float: left;height: 50px;background: url(../assets/imgs/more.jpg) no-repeat;background-position-y: 15px;width: 20px;display: block;text-indent: -9999px;}
+    	
+    	#nav ul li .subnav{width: 230px;float: right;margin-top: 0;display: none;}
+    	#nav ul li .subnav li{height: 40px;}
+    	#nav ul li .subnav .round{width: 10px;height: 10px;border-radius: 10px;-webkit-border-radius: 10px;-moz-border-radius:10px;border: 1px #5e686b solid;float: left;margin-top: 20px;}
+    	#nav ul li .subnav span{width: 217px;float: left;color: #5d686b}
+    	#nav ul li .subnav-show{display: block;}
+    </style>
+</head>
+<body>
+	<div id="wrapper">
+		
+		<div id="header">
+			<div id="logo"><img src="../assets/imgs/logo.jpg"><h1>解放车队管理系统--企业版</h1><h2>Jiefang Fleet Managemant System - Enterprise</h2></div>
+			<div id="tips">
+				<div id="time">2015年12月22日    星期二    10:32:56</div>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="nav">
+			<ul>
+				<li><i>一</i><p>实时监控</p><span>1</span>
+					<ul class="subnav">
+						<li><div class="round"></div><p>111</p></li>
+						<li><div class="round"></div><p>111</p></li>
+						<li><div class="round"></div><p>111</p></li>
+					</ul>
+				</li>
+				<li><i>二</i><p>实时监控</p><span></span>
+					<ul class="subnav">
+						<li><div class="round"></div><p>111</p></li>
+						<li><div class="round"></div><p>111</p></li>
+						<li><div class="round"></div><p>111</p></li>
+					</ul>
+				</li>
+				<li><i>三</i><p>实时监控</p><span></span>
+					<ul class="subnav">
+						<li><div class="round"></div><p>111</p></li>
+						<li><div class="round"></div><p>111</p></li>
+						<li><div class="round"></div><p>111</p></li>
+					</ul>
+				</li>
+				<li><i>四</i><p>实时监控</p><span></span>
+					<ul class="subnav">
+						<li><div class="round"></div><p>111</p></li>
+						<li><div class="round"></div><p>111</p></li>
+						<li><div class="round"></div><p>111</p></li>
+					</ul>
+				</li>
+				<li><i>五</i><p>实时监控</p><span></span>
+					<ul class="subnav">
+						<li><div class="round"></div><p>111</p></li>
+						<li><div class="round"></div><p>111</p></li>
+						<li><div class="round"></div><p>111</p></li>
+					</ul>
+				</li>
+				<li><i>六</i><p>实时监控</p><span></span>
+					<ul class="subnav">
+						<li><div class="round"></div><p>111</p></li>
+						<li><div class="round"></div><p>111</p></li>
+						<li><div class="round"></div><p>111</p></li>
+					</ul>
+				</li>
+				<li><i>七</i><p>实时监控</p><span></span>
+					<ul class="subnav">
+					</ul>
+				</li>
+				<li><i>八</i><p>实时监控</p><span></span>
+					<ul class="subnav">
+					</ul>
+				</li>
+				<li><i>九</i><p>实时监控</p><span></span>
+					<ul class="subnav">
+					</ul>
+				</li>
+				<li><i>十</i><p>实时监控</p><span></span>
+					<ul class="subnav">
+					</ul>
+				</li>
+				<li><i>一</i><p>实时监控</p><span></span>
+					<ul class="subnav">
+					</ul>
+				</li>
+				<li><i>二</i><p>实时监控</p><span></span>
+					<ul class="subnav">
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="main">33</div>
+	</div>
+</body>
+</html>

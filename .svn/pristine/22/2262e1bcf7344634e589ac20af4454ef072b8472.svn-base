@@ -1,0 +1,68 @@
+$(function(){
+	init();
+	function init(){
+		reScreen();
+		getTime();
+		initNav();
+		setInterval(function(){getTime()},60000);
+		
+		$("#nav ul li").click(function(e){
+			navEvent($(this));
+			e.stopPropagation();
+		});
+		
+		$("#nav ul li ul li").click(function(e){
+			subnavEvent($(this));
+			e.stopPropagation();
+		})
+	}
+	
+	function reScreen(){
+		$("#nav").height($(window).height()-80);
+		$("#main").height($(window).height()-80);
+		$(window).resize(function() {
+			$("#nav").height($(window).height()-80);
+			$("#main").height($(window).height()-80);
+		});
+	}
+	
+	function getTime(){
+		var weeks = ["周日","星期一","星期二","星期三","星期四","星期五","星期六"];
+		var data = new Date();
+		var year = data.getFullYear();
+		var month = data.getMonth()+1;
+		var today = data.getDate();
+		var week = weeks[data.getDay()];
+		var hours = data.getHours();
+		var minutes = data.getMinutes();
+		minutes>9?minutes=minutes:minutes="0"+minutes;
+		var nowtime = year+"年"+month+"月"+today+"日  "+week+"  "+hours+":"+minutes;
+		$("#time").html(nowtime);
+	}
+	
+	function navEvent(self){
+		self.siblings().find("ul").slideUp();
+		self.siblings().find(".nav-p").css({"color":"#5f6a6d"});
+		self.siblings().find("span").css({"background":"url(../assets/imgs/more.jpg) no-repeat 0 15px"});
+		
+		self.find("ul").slideDown();
+		self.find(".nav-p").css({"color":"#0054b4"});
+		self.find("span").css({"background":"url(../assets/imgs/more_.jpg) no-repeat 0 15px"});
+		
+		self.find("ul li").eq(0).click();
+	}
+	
+	function subnavEvent(self){
+		self.find(".round").css({"background":"#0054b4"});
+		self.find("p").css({"color":"#0054b4"});
+		
+		self.siblings().find(".round").css({"background":"none"});
+		self.siblings().find("p").css({"color":"#5f6a6d"});
+	}
+	
+	function initNav(){
+		$.getJSON("../nav_json",function(data){
+			console.log(data.nav.length);
+		})
+	}
+});   

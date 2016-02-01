@@ -1,0 +1,23 @@
+$(function(){
+	init();
+	function init(){
+		$("#nav").height($(window).height()-80);
+		$("#main").height($(window).height()-80);
+		$(window).resize(function() {
+			$("#nav").height($(window).height()-80);
+			$("#main").height($(window).height()-80);
+		});
+		
+		$("#nav ul li").click(function(e){
+			e.stopPropagation();
+			navEvent($(this));
+		})
+	}
+	
+	function navEvent(self){
+		self.siblings().find("p").css({"color":"#5d686b"});
+		self.find("p").css({"color":"#0054b4"});
+		self.siblings().find("ul").removeClass("subnav-show");
+		self.find("ul").addClass("subnav-show");
+	}
+});   
