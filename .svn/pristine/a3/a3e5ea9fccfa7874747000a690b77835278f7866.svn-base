@@ -1,5 +1,6 @@
 html,body{height: 100%;width: 100%;overflow-x: auto;overflow-y: hidden;}
 #monitor_car,#manage_job{width: 100%;height: 100%;background: #f2f7fa;min-width: 1125px;}
+
 #monitor_car #column{width: 100%;height: 60px;background: #fff;border-bottom: 1px #ccd1d9 solid;}
 #monitor_car #shop{width: 100%;height: 100px;background: #fff;border-bottom: 1px #ccd1d9 solid;}
 #monitor_car #content{width: 100%;height: 100%;background: #f2f7fa;overflow: auto;}
@@ -31,6 +32,7 @@ html,body{height: 100%;width: 100%;overflow-x: auto;overflow-y: hidden;}
 #monitor_car #content ul li .tips h3{float: left;width: 170px;color: #5f6a6c;font-size: 12px;margin: 0px 0 0 10px;}
 #monitor_car #content ul li .line{width: 700px;height: 50px;float: left;margin-left: 20px;position: relative;}
 #monitor_car #content ul li .line ul li{float: left;width: 70px;height: 50px;margin: 0;}
+
 #monitor_car #content ul li .more{float: right;width: 50px;height: 50px;border-radius: 5px;background: #23a8f5;margin-right: 30px;cursor: pointer;}
 #monitor_car #content ul li .more p{width: 24px;margin: 11px;line-height: 14px;}
 
@@ -47,7 +49,7 @@ html,body{height: 100%;width: 100%;overflow-x: auto;overflow-y: hidden;}
 #manage_job #content .job_name ul li p{float: left;width: 60px;color: #606a6c;}
 #manage_job #content .job_name ul li span{float: left;width: 85px;color: #606a6c;}
 #manage_job #content .road_name{width: 630px;float: left;height: 140px;margin-top: 10px;}
-#manage_job #content .road,.back_road{width: 630px;float: left;margin-top: -20px;margin-bottom: 5px;position: relative;}
+#manage_job #content .road,.back_road{width: 550px;float: left;margin-top: -20px;margin-bottom: 5px;position: relative;}
 #manage_job #content .job_change{width: 120px;float: left;margin-top: 20px;}
 #manage_job #content .job_change p{width: 45px;height: 30px;line-height: 30px;text-align: center;float: left;border-radius: 5px;background: #23a8f5;margin-left: 10px;cursor: pointer;}
 #manage_job #content .job_change .delect{background: #5f6a6c;}

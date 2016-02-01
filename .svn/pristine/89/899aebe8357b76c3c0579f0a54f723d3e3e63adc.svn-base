@@ -12,8 +12,8 @@
 		
 		<script type="text/javascript">
 			$(function(){
-				var arr1 = [1,1,1,2,2,3,3,1];
-				var arr2 = ["福州","江苏","北京","福州","江苏","北京","江苏","江苏"];
+				var arr1 = [1,1,1,2,2,3,3];
+				var arr2 = ["福州","江苏","北京","福州","江苏","北京","江苏"];
 				
 				$(".more").eq(0).before(carInfo("待发车","2015-12-16 09:00"));
 				$(".more").eq(0).before(stateLine(7,arr1,arr2));
