@@ -1,0 +1,22 @@
+/*公共样式*/
+/*车辆状态轴*/
+.line .lines{height: 1px;position: absolute;width: 100%;background: #616a6f;margin: 25px 30px;}
+.line ul{float: left;height: 50px;z-index: 100;position: relative;}
+.line ul li{float: left;width: 70px;height: 50px;margin: 0;}
+.line ul li p{width: 70px;text-align: center;height: 14px;line-height: 14px;color: #5f6a6c;}
+.line ul li .point{width: 12px;height: 12px;border-radius: 12px;border:1px #5f6a6c solid;margin: 4px auto;background: #fff;}
+.line ul li .point span{width: 10px;height: 10px;background: #23a8f5;float: left;border-radius: 10px;margin: 1px;}
+.line ul li .point_blue span{background: #23a8f5;}
+.line ul li .point_red span{background: #f15a25;}
+.line ul li .point_white span{background: #fff;}
+/*输入框样式*/
+input{color: #333;}
+.input_li{float: left;height: 30px;background: #fff;border-radius: 5px;border: 1px #ccd1d9 solid;margin: 14px;margin-left:10px;margin-right: 0px;}
+.input_li p{border-radius: 5px;border-top-right-radius:0px;border-bottom-right-radius:0px;float: left;color: #5f6a6c;background: #f4f8f9;height: 30px;line-height: 30px;padding:0 9px;border-right: 1px #ccd1d9 solid;}
+.input_li input{float: left;text-align: center;}
+.input_li span{float: left;color: #5f6a6c;height:30px;line-height: 30px;}
+.input_li select{float: left;border: none;border-radius: 5px;height: 30px;margin-left:3px;}
+.input_li .Time{position: relative;width: 90px;height: 30px;border-radius: 5px;}
+.input_li .Time::-webkit-calendar-picker-indicator {position: absolute;left: 0;width: 100px;opacity: 0;height: 100%;width: 100%;}
+.input_li .Time::-webkit-inner-spin-button{ visibility: hidden; }
+.input_li .input_text{height: 30px;width:auto;margin: 0 3px;text-align: center;}

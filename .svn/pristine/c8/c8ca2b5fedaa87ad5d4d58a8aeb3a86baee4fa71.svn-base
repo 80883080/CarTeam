@@ -1,0 +1,50 @@
+html,body{height: 100%;width: 100%;overflow-x: auto;overflow-y: hidden;}
+#monitor_car,#manage_job{width: 100%;height: 100%;background: #f2f7fa;min-width: 1125px;}
+
+#monitor_car #column{width: 100%;height: 60px;background: #fff;border-bottom: 1px #ccd1d9 solid;}
+#monitor_car #shop{width: 100%;height: 100px;background: #fff;border-bottom: 1px #ccd1d9 solid;}
+#monitor_car #content{width: 100%;height: 100%;background: #f2f7fa;overflow: auto;}
+
+#monitor_car #column ul{margin-left: 10px;}
+#monitor_car #column ul #column_btn p{border-right:0px;cursor: pointer;border-radius: 5px;}
+
+#monitor_car #shop ul{float: left;height: 50px;margin-top: 22px;}
+#monitor_car #shop ul li{float: left;border-right: 1px #ccd1d9 solid;height: 50px;}
+#monitor_car #shop ul li .status{height: 50px;width: 50px;border-radius:5px;background: #000;margin: 0px 40px;float: left;}
+#monitor_car #shop ul li .status h1{width: 100%;text-align: center;font-size: 22px;line-height: 22px;height: 22px;padding-top:5px ;}
+#monitor_car #shop ul li .status h2{width: 100%;text-align: center;font-size: 14px;}
+#monitor_car #shop ul li .status_blue{background: #23a8f5;}
+#monitor_car #shop ul li .status_yellow{background: #fbb03b;}
+#monitor_car #shop ul li .status_green{background: #8cc63e;}
+#monitor_car #shop ul li .status_gery{background: #5f6a6c;}
+#monitor_car #shop ul li ul{height: 51px;float: left;width: 90px;margin: 0;margin-right: 40px;}
+#monitor_car #shop ul li ul li{width: 90px;float: left;border: 0px;height: 17px;}
+#monitor_car #shop ul li ul li p{float: left;color: #606a6c;}
+#monitor_car #shop ul li ul li span{float: right;color: #606a6c;}
+
+#monitor_car #content ul{width: 100%;height: auto;float: left;margin-bottom: 240px;}
+#monitor_car #content ul li{width: 100%;float: left;height: 52px;margin-top: 30px;}
+#monitor_car #content ul li .tips{width: 257px;height: 50px;float: left;border-radius: 5px;border: 1px #ccd0d9 solid;background: #fff;margin-left: 30px;}
+#monitor_car #content ul li .tips h2{float:left;width: 68px;height: 50px;line-height: 50px;border-top-left-radius: 5px;border-bottom-left-radius: 5px;background: #fbb03b;font-size: 14px;text-align: center;}
+#monitor_car #content ul li .tips_green h2{background: #8cc63e;}
+#monitor_car #content ul li .tips_gery h2{background: #5f6a6c;}
+#monitor_car #content ul li .tips h1{float: left;width: 170px;color: #5f6a6c;font-size: 14px;margin: 6px 0 0 10px;}
+#monitor_car #content ul li .tips h3{float: left;width: 170px;color: #5f6a6c;font-size: 12px;margin: 0px 0 0 10px;}
+#monitor_car #content ul li .line{width: 700px;height: 50px;float: left;margin-left: 20px;position: relative;}
+#monitor_car #content ul li .line ul li{float: left;width: 70px;height: 50px;margin: 0;}
+
+#monitor_car #content ul li .more{float: right;width: 50px;height: 50px;border-radius: 5px;background: #23a8f5;margin-right: 30px;cursor: pointer;}
+#monitor_car #content ul li .more p{width: 24px;margin: 11px;line-height: 14px;}
+
+
+#manage_job{min-width: 1180px;}
+#manage_job #column{width: 100%;height: 60px;background: #fff;border-bottom: 1px #ccd1d9 solid;}
+#manage_job #column_btn p{border-right:0px;cursor: pointer;border-radius: 5px;}
+
+#manage_job #content .job{float: left;width: 1110px;height: 160px;background: #f4f8f9;border: 1px solid #ccd0d9;border-radius: 5px;margin: 20px;}
+#manage_job #content h1{font-size: 14px;color: #0054b4;width: 100%;text-align: left;float: left;margin-bottom: 10px;margin: 20px;}
+#manage_job #content .job_name{width: 340px;float: left;height: auto;background: #000;}
+#manage_job #content .job_name ul{margin-left: 20px;width: 340px;float: left;}
+#manage_job #content .job_name ul li{float: left;width: 170px;}
+#manage_job #content .job_name ul li p{float: left;width: 60px;color: #606a6c;}
+#manage_job #content .job_name ul li span{float: left;width: 85px;color: #606a6c;}

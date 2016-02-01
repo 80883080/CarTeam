@@ -1,0 +1,40 @@
+package com.zoolon.faw.env;
+
+import com.jfinal.config.*;
+import com.jfinal.kit.PropKit;
+import com.zoolon.faw.api.ApiRouter;
+import com.zoolon.faw.apps.ApiDispatcher;
+import com.zoolon.faw.apps.Test;
+
+
+public class Config extends JFinalConfig {
+    @Override
+    public void configConstant(Constants me) {
+        PropKit.use("config");
+        //  me.setDevMode(true);
+    }
+
+    @Override
+    public void configRoute(Routes me) {
+
+        me.add(new ApiRouter());
+
+        me.add("/ad", ApiDispatcher.class);
+        me.add("/test", Test.class);
+    }
+
+    @Override
+    public void configPlugin(Plugins me) {
+
+    }
+
+    @Override
+    public void configInterceptor(Interceptors me) {
+
+    }
+
+    @Override
+    public void configHandler(Handlers me) {
+
+    }
+}

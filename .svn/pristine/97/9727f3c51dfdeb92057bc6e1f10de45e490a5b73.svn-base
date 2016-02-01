@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>任务管理</title>
+		<link rel="stylesheet" href="../assets/css/reset.css" />
+		<link rel="stylesheet" href="../assets/css/public.css" />
+		<link rel="stylesheet" href="../assets/css/ifram.css" />
+		
+		<script type="text/javascript" src="../assets/js/jquery-1.9.1.js" ></script>
+		<script type="text/javascript" src="../assets/js/public.js" ></script>
+	</head>
+	<body>
+		<div id="manage_job">
+			<div id="column">
+				<ul>
+					<li id="column_btn" class="input_li"><p>添加任务</p></li>
+					<li class="input_li"><p>时间范围</p><input type="date" class="Time" id="start"/><span>至</span><input type="date" class="Time" id="end"/></li>
+					<li class="input_li"><p>计划名称</p><input type="text" value="北京至哈尔滨" class="input_text" style="width: 90px"/></li>
+					<li class="input_li"><p>所属机构:</p>
+						<select>
+						   <option>解放军车队一组</option>
+						   <option>2</option>
+						   <option>3</option>
+						   <option>4</option>
+						   <option>5</option>
+						</select>
+					</li>
+					<li class="input_li"><p>车辆</p>
+						<select>
+						   <option>京BL554</option>
+						   <option>2</option>
+						   <option>3</option>
+						   <option>4</option>
+						   <option>5</option>
+						</select>
+					</li>
+					<li class="input_li"><p>起始点</p>
+						<select>
+						   <option>所有</option>
+						   <option>2</option>
+						   <option>3</option>
+						   <option>4</option>
+						   <option>5</option>
+						</select>
+					</li>
+					<li class="input_li"><p>线路类型</p>
+						<select>
+						   <option>干线</option>
+						   <option>2</option>
+						   <option>3</option>
+						   <option>4</option>
+						   <option>5</option>
+						</select>
+					</li>
+					<li id="column_btn" class="input_li"><p>查询</p></li>
+				</ul>
+			</div>
+			<div id="content">
+				<div class="job">
+					<div class="job_name">
+						<h1>任务名称</h1>
+						<ul>
+							<li><p>所属机构:</p><span>解放车队一班组</span></li>
+							<li><p>周期类型:</p><span>单次</span></li>
+							<li><p>延误比例:</p><span>15%</span></li>
+							<li><p>发车时间:</p><span>2015-12-06</span></li>
+							<li><p>运营时常:</p><span>1天2小时40分</span></li>
+							<li><p>到达时间:</p><span>2015-12-08</span></li>
+							<li><p>运费:</p><span>3000元</span></li>
+							<li><p>车辆:</p><span>京A4515</span></li>
+							<li><p>运营类型:</p><span>空</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

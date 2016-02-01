@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>车辆监控</title>
+		<link rel="stylesheet" href="../assets/css/reset.css" />
+		<link rel="stylesheet" href="../assets/css/public.css" />
+		<link rel="stylesheet" href="../assets/css/ifram.css" />
+		<script type="text/javascript" src="../assets/js/jquery-1.9.1.js" ></script>
+		<script type="text/javascript" src="../assets/js/public.js" ></script>
+
+		
+		<script type="text/javascript">
+			$(function(){
+				var arr1 = [1,1,1,2,2,3,3];
+				var arr2 = ["福州","江苏","北京","福州","江苏","北京","江苏"];
+				
+				$(".more").eq(0).before(carInfo("待发车","2015-12-16 09:00"));
+				$(".more").eq(0).before(stateLine(7,arr1,arr2));
+				
+				for (var i=0;i<$("#content ul li .lines").length;i++) {
+					$(".lines").eq(i).width(70*($(".line").eq(i).find("ul li").length-1));
+				}
+				
+			})
+		</script>
+	</head>
+	<body>
+		<div id="monitor_car">
+			<div id="column">
+				<ul>
+					<li class="input_li"><p>时间范围</p><input type="date" class="Time" id="start"/><span>至</span><input type="date" class="Time" id="end"/></li>
+					<li class="input_li"><p>所属机构</p>
+						<select>
+						   <option>解放军车队一组</option>
+						   <option>2</option>
+						   <option>3</option>
+						   <option>4</option>
+						   <option>5</option>
+						</select>
+					</li>
+					<li class="input_li"><p>车辆</p>
+						<select>
+						   <option>京BL554</option>
+						   <option>2</option>
+						   <option>3</option>
+						   <option>4</option>
+						   <option>5</option>
+						</select>
+					</li>
+					<li class="input_li"><p>驾驶员</p><input type="text" value="驾驶员" class="input_text" style="width: 50px;"/></li>
+					<li class="input_li"><p>任务名称</p><input type="text" value="北京至哈尔滨" class="input_text" style="width: 90px"/></li>
+					<li class="input_li"><p>线路类型</p>
+						<select>
+						   <option>干线</option>
+						   <option>2</option>
+						   <option>3</option>
+						   <option>4</option>
+						   <option>5</option>
+						</select>
+					</li>
+					<li id="column_btn" class="input_li"><p>查询</p></li>
+				</ul>
+			</div>
+			<div id="shop">
+				<ul>
+					<li>
+						<div class="status status_blue" style="width: 67px;;"><h1>23</h1><h2>所有计划</h2></div>
+					</li>
+					<li>
+						<div class="status status_yellow"><h1>7</h1><h2>待发车</h2></div>
+						<ul>
+							<li><p>正常</p><span>3</span></li>
+							<li><p>预计发车延时</p><span>3</span></li>
+							<li><p>发车延时</p><span>3</span></li>
+						</ul>
+					</li>
+					<li>
+						<div class="status status_green"><h1>10</h1><h2>在途中</h2></div>
+						<ul>
+							<li><p>正常</p><span>3</span></li>
+							<li><p>预计发车延时</p><span>3</span></li>
+							<li><p>发车延时</p><span>3</span></li>
+						</ul>
+						<ul>
+							<li><p>正常</p><span>3</span></li>
+							<li><p>预计发车</p><span>3</span></li>
+							<li><p>发车延时</p><span>3</span></li>
+						</ul>
+					</li>
+					<li>
+						<div class="status status_gery"><h1>7</h1><h2>已结束</h2></div>
+						<ul>
+							<li><p>正常</p><span>3</span></li>
+							<li><p>预计发车延时</p><span>3</span></li>
+							<li><p>发车延时</p><span>3</span></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="content">
+				<ul>
+					<li>
+						<div class="more"><p>查看详情</p></div>
+					</li>
+					<li>
+						<div class="tips tips_green"><h2>在途中</h2><h1>班线名称</h1><h3>发车时间  2015-12-16 09:00</h3></div>
+						<div class="line">
+							<div class="lines"></div>
+							<ul>
+								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
+								<li><p>延时</p><div class="point point_red"><span></span></div><p>福州</p></li>
+								<li><p>延时</p><div class="point point_red"><span></span></div><p>福州</p></li>
+								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
+								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
+								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
+								<li><p>预计延时</p><div class="point point_white"><span></span></div><p>福州</p></li>
+								<li><p>预计延时</p><div class="point point_white"><span></span></div><p>福州</p></li>
+							</ul>
+						</div>
+						<div class="more"><p>查看详情</p></div>
+					</li>
+					<li>
+						<div class="tips"><h2>待发车</h2><h1>班线名称</h1><h3>发车时间  2015-12-16 09:00</h3></div>
+						<div class="line">
+							<div class="lines"></div>
+							<ul>
+								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
+								<li><p>延时</p><div class="point point_red"><span></span></div><p>福州</p></li>
+								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
+								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
+								<li><p>预计延时</p><div class="point point_white"><span></span></div><p>福州</p></li>
+								<li><p>预计延时</p><div class="point point_white"><span></span></div><p>福州</p></li>
+							</ul>
+						</div>
+						<div class="more"><p>查看详情</p></div>
+					</li>
+					<li>
+						<div class="tips tips_green"><h2>在途中</h2><h1>班线名称</h1><h3>发车时间  2015-12-16 09:00</h3></div>
+						<div class="line">
+							<div class="lines"></div>
+							<ul>
+								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
+								<li><p>延时</p><div class="point point_red"><span></span></div><p>福州</p></li>
+								<li><p>延时</p><div class="point point_red"><span></span></div><p>福州</p></li>
+								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
+								<li><p>预计延时</p><div class="point point_white"><span></span></div><p>福州</p></li>
+							</ul>
+						</div>
+						<div class="more"><p>查看详情</p></div>
+					</li>
+					<li>
+						<div class="tips tips_gery"><h2>已结束</h2><h1>班线名称</h1><h3>发车时间  2015-12-16 09:00</h3></div>
+						<div class="line">
+							<div class="lines"></div>
+							<ul>
+								<li><p>延时</p><div class="point point_red"><span></span></div><p>福州</p></li>
+								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
+								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
+								<li><p>预计延时</p><div class="point point_white"><span></span></div><p>福州</p></li>
+								<li><p>预计延时</p><div class="point point_white"><span></span></div><p>福州</p></li>
+							</ul>
+						</div>
+						<div class="more"><p>查看详情</p></div>
+					</li>
+					<li>
+						<div class="tips tips_gery"><h2>已结束</h2><h1>班线名称</h1><h3>发车时间  2015-12-16 09:00</h3></div>
+						<div class="line">
+							<div class="lines"></div>
+							<ul>
+								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
+								<li><p>延时</p><div class="point point_red"><span></span></div><p>福州</p></li>
+								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
+								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
+								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
+								<li><p>预计延时</p><div class="point point_white"><span></span></div><p>福州</p></li>
+								<li><p>预计延时</p><div class="point point_white"><span></span></div><p>福州</p></li>
+							</ul>
+						</div>
+						<div class="more"><p>查看详情</p></div>
+					</li>
+					<li>
+						<div class="tips"><h2>待发车</h2><h1>班线名称</h1><h3>发车时间  2015-12-16 09:00</h3></div>
+						<div class="line">
+							<div class="lines"></div>
+							<ul>
+								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
+								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
+								<li><p>正常</p><div class="point"><span></span></div><p>福州</p></li>
+							</ul>
+						</div>
+						<div class="more"><p>查看详情</p></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
