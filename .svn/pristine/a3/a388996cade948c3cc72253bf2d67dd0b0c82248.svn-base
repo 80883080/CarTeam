@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>O-ui</title>
+		<script src="../assets/js/laydate.js"></script>
+		<link rel="stylesheet" href="../assets/css/public.css" />
+		<style>
+			*{margin: 0;padding: 0;}
+			html,body{width: 100%;height: auto;position: relative;background: #f2f7fa;}
+			p{font-family: "微软雅黑";font-size: 12px;}
+			#wrapper{width: 90%;margin-left: 5%;}
+			#wrapper div{float: left;margin: 10px;}
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div class="oui_btn"><p>按钮名称</p></div>
+			<div class="oui_input"><input type="text" placeholder="请输入内容"/></div>
+			<div class="oui_input"><p>输入内容</p><input type="text" placeholder="请输入内容"/></div>
+			<div class="oui_input oui_input_date"><input onclick="laydate()"></div>
+			<div class="oui_input oui_input_date">
+				<p>输入内容</p>
+				<input placeholder="请输入时间" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+			</div>
+			<div class="oui_input oui_input_date">
+				<p>输入内容</p>
+				<input placeholder="请输入时间" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm'})">
+				<span>至</span>
+				<input placeholder="请输入时间" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm'})">
+			</div>
+			<div class="oui_select">
+				<select>
+				   <option>解放军车队一组</option>
+				   <option>2</option>
+				   <option>3</option>
+				   <option>4</option>
+				   <option>5</option>
+				</select>
+			</div>
+			<div class="oui_select">
+				<p>选择输入</p>
+				<select>
+				   <option>解放军车队一组</option>
+				   <option>2</option>
+				   <option>3</option>
+				   <option>4</option>
+				   <option>5</option>
+				</select>
+			</div>
+			
+			
+		</div>
+	</body>
+</html>
