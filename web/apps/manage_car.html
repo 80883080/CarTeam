@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>车辆信息管理</title>
+		
+		<link rel="stylesheet" href="../assets/css/reset.css" />
+		<link rel="stylesheet" href="../assets/css/public.css" />
+		<link rel="stylesheet" href="../assets/css/ifram.css" />
+		
+		<script type="text/javascript" src="//cdn.bootcss.com/jquery/1.12.0/jquery.min.js"></script>
+		<script type="text/javascript" src="../assets/js/public.js" ></script>
+		<style type="text/css">
+			#manage_car #column div{float: left;margin: 10px 0 10px 10px;}
+			#manage_car #column #btn_sub{float: right;margin-right: 50px;}
+			#manage_car #content ul{float: left;width: 1100px;margin-left: 20px;}
+			#manage_car #content ul li{float: left;width: 1098px; margin-top: 15px;border: 1px #ccd0d9 solid;height: 90px;border-radius: 5px;}
+			#manage_car #content ul li .car_num{width: 230px;float: left;height: 60px;margin-top: 15px;border-right: 1px solid #CCD0D9;}
+			#manage_car #content ul li .car_info{width: 750px;float: left;height: 60px;margin-top: 15px;border-right: 1px solid #CCD0D9;}
+			#manage_car #content ul li .car_btn{width: 110px;float: left;height: 60px;margin-top: 15px;}
+			#manage_car #content ul li .car_num h1{font-size: 14px;color: #24a7f5;float: left;height: 14px;margin-top: 8px;padding-left: 25px;}
+			#manage_car #content ul li .car_num h1:first-child{width: 100%;padding-left: 15px;}
+			#manage_car #content ul li .car_num h1:first-child:before{content: "|";font-weight: 600;padding-right: 5px;}
+			#manage_car #content ul li .car_info ul{width: 600px;}
+			#manage_car #content ul li .car_info ul li{width: 150px;margin: 10px 0 0 0;border: none;height: 14px;}
+			#manage_car #content ul li .car_info ul li p{font-size: 12px;float: left;color: #606a6c;}
+			#manage_car #content ul li .car_info ul li span{font-size:12px;float: left;color: #606a6c;}
+			#manage_car #content ul li .car_btn div{float: left;margin-left: 8px;margin-top: 10px;}
+		</style>
+	</head>
+	<body>
+		<div id="manage_car">
+			<div id="column">
+				<div class="oui_btn"><p>导入</p></div>
+				<div class="oui_btn"><p>获取车辆权限</p></div>
+				<div class="oui_select">
+					<p>车牌号</p>
+					<select>
+					   <option>京BL6143</option>
+					   <option>2</option>
+					   <option>3</option>
+					   <option>4</option>
+					   <option>5</option>
+					</select>
+				</div>
+				<div class="oui_input"><p>驾驶员</p><input type="text" placeholder="驾驶员" style="width: 50px;"/></div>
+				<div class="oui_btn" id="btn_sub"><p>查询</p></div>
+			</div>
+			
+			<div id="content">
+				<ul>
+					<li>
+						<div class="car_num">
+							<h1>吉A·L0963</h1>
+							<h1>设备号:C123456789987654</h1>
+						</div>
+						<div class="car_info">
+							<ul>
+								<li><p>车型：</p><span>捷豹</span></li>
+								<li><p>车型颜色：</p><span>红色</span></li>
+								<li><p>发动机型号：</p><span>6M-6120</span></li>
+								<li><p>所属机构：</p><span>解放车队一组</span></li>
+								<li><p>驾驶员：</p><span>李小四</span></li>
+								<li><p>变速箱型号：</p><span>QR15696</span></li>
+								<li><p>后桥速比：</p><span>4.111</span></li>
+								<li><p>车籍地：</p><span>吉林长春</span></li>
+							</ul>
+						</div>
+						<div class="car_btn">
+							<div class="oui_btn"><p>修改</p></div>
+							<div class="oui_btn"><p>删除</p></div>
+						</div>
+					</li>
+					
+					<li>
+						<div class="car_num">
+							<h1>吉A·L0963</h1>
+							<h1>设备号:C123456789987654</h1>
+						</div>
+						<div class="car_info">
+							<ul>
+								<li><p>车型：</p><span>捷豹</span></li>
+								<li><p>车型颜色：</p><span>红色</span></li>
+								<li><p>发动机型号：</p><span>6M-6120</span></li>
+								<li><p>所属机构：</p><span>解放车队一组</span></li>
+								<li><p>驾驶员：</p><span>李小四</span></li>
+								<li><p>变速箱型号：</p><span>QR15696</span></li>
+								<li><p>后桥速比：</p><span>4.111</span></li>
+								<li><p>车籍地：</p><span>吉林长春</span></li>
+							</ul>
+						</div>
+						<div class="car_btn">
+							<div class="oui_btn"><p>修改</p></div>
+							<div class="oui_btn"><p>删除</p></div>
+						</div>
+					</li>
+					
+					<li>
+						<div class="car_num">
+							<h1>吉A·L0963</h1>
+							<h1>设备号:C123456789987654</h1>
+						</div>
+						<div class="car_info">
+							<ul>
+								<li><p>车型：</p><span>捷豹</span></li>
+								<li><p>车型颜色：</p><span>红色</span></li>
+								<li><p>发动机型号：</p><span>6M-6120</span></li>
+								<li><p>所属机构：</p><span>解放车队一组</span></li>
+								<li><p>驾驶员：</p><span>李小四</span></li>
+								<li><p>变速箱型号：</p><span>QR15696</span></li>
+								<li><p>后桥速比：</p><span>4.111</span></li>
+								<li><p>车籍地：</p><span>吉林长春</span></li>
+							</ul>
+						</div>
+						<div class="car_btn">
+							<div class="oui_btn"><p>修改</p></div>
+							<div class="oui_btn"><p>删除</p></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
