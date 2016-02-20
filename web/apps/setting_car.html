@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>车辆信息设置</title>
+		<link rel="stylesheet" href="../assets/css/reset.css" />
+		<link rel="stylesheet" href="../assets/css/public.css" />
+		<link rel="stylesheet" href="../assets/css/ifram.css" />
+		
+		<script type="text/javascript" src="//cdn.bootcss.com/jquery/1.12.0/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="setting_car">
+			<div id="column">
+				<p>车辆信息设置</p>
+			</div>
+			<div id="content">
+				<div id="car_num">
+					<h1>设备号：C18456789456426</h1>
+				</div>
+				<div id="car_info">
+					<div class="oui_input"><p>车牌号</p><input style="width: 80px;" type="text" placeholder="京A·B1234"/></div>
+					<div class="oui_input"><p>车牌颜色</p><input style="width: 50px;" type="text" placeholder="颜色"/></div>
+					<div class="oui_input"><p>车型</p><input style="width: 80px;" type="text" placeholder="车型"/></div>
+					<div class="oui_input"><p>车辆颜色</p><input style="width: 50px;" type="text" placeholder="颜色"/></div>
+					<div class="oui_input"><p>车籍地</p><input style="width: 100px;" type="text" placeholder="请输入车籍地"/></div>
+					<div class="oui_select">
+						<p>所属机构</p>
+						<select>
+						   <option>解放军车队一组</option>
+						   <option>2</option>
+						   <option>3</option>
+						   <option>4</option>
+						   <option>5</option>
+						</select>
+					</div>
+					<div class="oui_input"><p>发动机型号</p><input style="width: 80px;" type="text" placeholder="发动机型号"/></div>
+					<div class="oui_input"><p>变速箱型号</p><input style="width: 80px;" type="text" placeholder="变速箱型号"/></div>
+					<div class="oui_input"><p>速桥比</p><input style="width: 50px;" type="text" placeholder="速桥比"/></div>
+					
+					<div id="person">
+						<p>驾驶员：胡八一</p>
+					</div>
+				</div>
+				<div id="driver_info">
+					<div class="oui_input"><p>驾驶员搜索</p><input style="width: 100px;" type="text" placeholder="驾驶员搜索"/></div>
+					<div class="oui_select">
+						<p>所属机构</p>
+						<select>
+						   <option>解放军车队一组</option>
+						   <option>2</option>
+						   <option>3</option>
+						   <option>4</option>
+						   <option>5</option>
+						</select>
+					</div>
+					<div class="oui_btn"><p>查询</p></div>
+					<div class="oui_btn"><p>分配中的驾驶员</p></div>
+					
+					<div id="driver_name">
+						<form>
+							<input type="checkbox" name="all" id="all"/><p>全部</p><br /><br />
+							<input type="checkbox" name="bike" />
+							<p>驾驶员姓名</p>
+							<input type="checkbox" name="car" />
+							<p>驾驶员姓名</p>
+						</form>
+					</div>
+				</div>
+				<div id="setting_btn">
+					<div class="oui_btn oui_btn_blue"><p>保存</p></div>
+					<div class="oui_btn oui_btn_white"><p>取消</p></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

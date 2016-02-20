@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft YaHei', 微软雅黑, SimSun, 宋体, HELVETICA;
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    line-height: 1.6;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+
+}
+
+.btn-secondary, .input-group-addon {
+    background-color: #f6f7f8;
+    border-color: darkgray;
+}
+

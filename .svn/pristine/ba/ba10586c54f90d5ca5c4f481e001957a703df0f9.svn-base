@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        button {
+            padding: 5px 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <h2>任务管理</h2>
+    <button data-api="line.list">查询</button>
+
+</div>
+
+<div>
+    <h2>班线管理</h2>
+    <button data-api="route.list" data-body='{"lineName":"yan2"}'>查询</button>
+    <button data-api="route.back" data-body='{"parLineId":"05c193f8-de63-4af1-9251-412ba333f527"}'>查返程</button>
+</div>
+
+
+<div>
+    <h2>站点管理</h2>
+    <button data-api="station.list">查询</button>
+</div>
+
+<script type="text/javascript" src="../assets/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../assets/lib/api/Api.js"></script>
+<script type="text/javascript" src="../assets/lib/api/ApiTest.js"></script>
+</body>
+</html>
