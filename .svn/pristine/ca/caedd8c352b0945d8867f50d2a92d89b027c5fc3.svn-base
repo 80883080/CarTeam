@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>车辆信息管理</title>
+		
+		<link rel="stylesheet" href="../assets/css/reset.css" />
+		<link rel="stylesheet" href="../assets/css/public.css" />
+		<link rel="stylesheet" href="../assets/css/ifram.css" />
+		
+		<script type="text/javascript" src="//cdn.bootcss.com/jquery/1.12.0/jquery.min.js"></script>
+		<script src="../assets/js/laydate.js"></script>
+	</head>
+	<body>
+		<div id="manage_car">
+			<div id="column">
+				<div class="oui_btn"><p>录入事故</p></div>
+				<div class="oui_input oui_input_date">
+					<p>输入内容</p>
+					<input placeholder="请输入时间" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm'})">
+					<span>至</span>
+					<input placeholder="请输入时间" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm'})">
+				</div>
+				<div class="oui_select">
+					<p>车牌号</p>
+					<select>
+					   <option>京BL6143</option>
+					   <option>2</option>
+					   <option>3</option>
+					   <option>4</option>
+					   <option>5</option>
+					</select>
+				</div>
+				<div class="oui_select">
+					<p>所属机构</p>
+					<select>
+					   <option>解放车队一分部</option>
+					   <option>2</option>
+					   <option>3</option>
+					   <option>4</option>
+					   <option>5</option>
+					</select>
+				</div>
+				<div class="oui_btn" id="btn_sub"><p>查询</p></div>
+			</div>
+			
+			<div id="content">
+				<ul>
+					<li>
+						<div class="car_num">
+							<h1>吉A·L0963</h1>
+							<h1>设备号:C123456789987654</h1>
+						</div>
+						<div class="car_info">
+							<ul>
+								<li><p>车型：</p><span>捷豹</span></li>
+								<li><p>车型颜色：</p><span>红色</span></li>
+								<li><p>发动机型号：</p><span>6M-6120</span></li>
+								<li><p>所属机构：</p><span>解放车队一组</span></li>
+								<li><p>驾驶员：</p><span>李小四</span></li>
+								<li><p>变速箱型号：</p><span>QR15696</span></li>
+								<li><p>后桥速比：</p><span>4.111</span></li>
+							</ul>
+						</div>
+						<div class="car_btn">
+							<div class="oui_btn"><p>修改</p></div>
+							<div class="oui_btn"><p>删除</p></div>
+						</div>
+					</li>
+					
+					<li>
+						<div class="car_num">
+							<h1>吉A·L0963</h1>
+							<h1>设备号:C123456789987654</h1>
+						</div>
+						<div class="car_info">
+							<ul>
+								<li><p>车型：</p><span>捷豹</span></li>
+								<li><p>车型颜色：</p><span>红色</span></li>
+								<li><p>发动机型号：</p><span>6M-6120</span></li>
+								<li><p>所属机构：</p><span>解放车队一组</span></li>
+								<li><p>驾驶员：</p><span>李小四</span></li>
+								<li><p>变速箱型号：</p><span>QR15696</span></li>
+								<li><p>后桥速比：</p><span>4.111</span></li>
+							</ul>
+						</div>
+						<div class="car_btn">
+							<div class="oui_btn"><p>修改</p></div>
+							<div class="oui_btn"><p>删除</p></div>
+						</div>
+					</li>
+					
+					<li>
+						<div class="car_num">
+							<h1>吉A·L0963</h1>
+							<h1>设备号:C123456789987654</h1>
+						</div>
+						<div class="car_info">
+							<ul>
+								<li><p>车型：</p><span>捷豹</span></li>
+								<li><p>车型颜色：</p><span>红色</span></li>
+								<li><p>发动机型号：</p><span>6M-6120</span></li>
+								<li><p>所属机构：</p><span>解放车队一组</span></li>
+								<li><p>驾驶员：</p><span>李小四</span></li>
+								<li><p>变速箱型号：</p><span>QR15696</span></li>
+								<li><p>后桥速比：</p><span>4.111</span></li>
+							</ul>
+						</div>
+						<div class="car_btn">
+							<div class="oui_btn"><p>修改</p></div>
+							<div class="oui_btn"><p>删除</p></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

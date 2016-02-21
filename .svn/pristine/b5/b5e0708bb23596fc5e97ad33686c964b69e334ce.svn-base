@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>不良驾驶行为统计</title>
+		<link rel="stylesheet" href="../assets/css/reset.css" />
+		<link rel="stylesheet" href="../assets/css/public.css" />
+		<link rel="stylesheet" href="../assets/css/ifram.css" />
+		
+		<script type="text/javascript" src="//cdn.bootcss.com/jquery/1.12.0/jquery.min.js"></script>
+		<script type="text/javascript" src="../assets/js/laydate.js" ></script>
+		
+	</head>
+	<body>
+		<div id="count_behavior">
+			<div id="column">
+				<div class="oui_input oui_input_date">
+					<p>时间范围</p>
+					<input placeholder="请输入时间" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm'})">
+					<span>至</span>
+					<input placeholder="请输入时间" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm'})">
+				</div>
+				<div class="oui_select">
+					<p>车辆</p>
+					<select>
+					   <option>京A·C1254</option>
+					   <option>2</option>
+					   <option>3</option>
+					   <option>4</option>
+					   <option>5</option>
+					</select>
+				</div>
+				<div class="oui_btn" id="search"><p>查询</p></div>
+			</div>
+			<div id="content">
+				<div id="behavior">
+					<ul>
+						<li><h1>急加,减速</h1><h2>急加速次数：75次</h2><h2>急减速次数：75次</h2></li>
+						<li><h1>空挡滑行</h1><h2>空挡滑行次数：75次 0时53分</h2></li>
+						<li><h1>超速,转速</h1><h2>超速次数：75次 0时53分</h2><h2>转速次数：75次 0时53分</h2></li>
+						<li><h1>冷启动未暖车</h1><h2>冷启动未暖车次数：75次</h2></li>
+						<li><h1>疲劳驾驶</h1><h2>疲劳驾驶次数：75次</h2></li>
+					</ul>
+				</div>
+				<div class="oui_btn" id="export"><p>导出报表</p></div>
+			</div>
+		</div>
+	</body>
+</html>
