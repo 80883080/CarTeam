@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>设置</title>
+		
+		<link rel="stylesheet" href="../assets/css/reset.css" />
+		<link rel="stylesheet" href="../assets/css/public.css" />
+		<link rel="stylesheet" href="../assets/css/ifram.css" />
+		
+		<script type="text/javascript" src="//cdn.bootcss.com/jquery/1.12.0/jquery.min.js"></script>
+		<script type="text/javascript" src="../assets/js/laydate.js" ></script>
+		
+		<script type="text/javascript">
+			$(function(){
+				var titleLi = $("#setting_title li");
+				var contentLi = $("#setting_content li");
+				PageInit()
+				function PageInit(){
+					titleLi.click(function(){
+						var index = titleLi.index($(this));
+						titleLi.removeClass("title_select");
+						titleLi.eq(index).addClass("title_select");
+						contentLi.removeClass("content_select");
+						contentLi.eq(index).addClass("content_select");
+					})
+				}
+				
+			})
+		</script>
+	</head>
+	<body>
+		<div id="setting_page">
+			<ul id="setting_title">
+				<li class="title_select">关于软件</li>
+				<li>消息设置</li>
+				<li>统计设置</li>
+				<li>修改密码</li>
+			</ul>
+			<ul id="setting_content">
+				<li  class="content_select"><p>软件版本信息 <br />软件开发商信息 <br />售后服务电话信息 <br /></p><textarea></textarea><div class="oui_btn" id="clearF"><p>发表</p></div></li>
+				<li id="password">
+					<div class="oui_input"><p>原密码</p><input type="text" placeholder="请输入内容"/></div>
+					<div class="oui_input"><p>新密码</p><input type="text" placeholder="请输入内容"/></div>
+					<div class="oui_input"><p>确认新密码</p><input type="text" placeholder="请输入内容"/></div>
+					<div class="oui_btn"><p>修改</p></div>
+					<div class="oui_btn" id="second"><p>取消</p></div>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
